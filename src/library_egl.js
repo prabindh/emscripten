@@ -276,6 +276,7 @@ var LibraryEGL = {
 		break;
 	}
 	else{
+		/* Error as of EGL 1.4 */
 		EGL.setErrorCode(0x3004 /*EGL_BAD_ATTRIBUTE*/); 
 		return 0;
 	}
